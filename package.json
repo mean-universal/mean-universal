@@ -31,6 +31,7 @@
     "@nestjs/ng-universal": "~3.1.0",
     "@nestjs/platform-express": "~7.0.7",
     "@nguniversal/express-engine": "~9.1.0",
+    "bootstrap": "^4.4.1",
     "class-transformer": "~0.2.3",
     "class-validator": "~0.9.1",
     "express": "~4.17.1",

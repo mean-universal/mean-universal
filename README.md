@@ -1,12 +1,19 @@
-# JP-MEAN
+# jp-mean-universal
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+The NestJS server was generated with the `ng add @nest/ng-universal` command and manually optimized, so that the server code is centralized under `projects/nest-server`. This is not a standalone Angular project like you would normally see in the angular.json file, instead it is tightly coubled with the `projects/universal-app` and acts also as REST-API.
 
 This project was inspired by the following projects:
 
 * [linnovate/mean](https://github.com/linnovate/mean)
 * [TrilonIO/universal-nest](https://github.com/TrilonIO/universal-nest)
 * [Angular-RU/angular-nest-starter](https://github.com/Angular-RU/angular-nest-starter)
+* [nartc/nest-mean](https://github.com/nartc/nest-mean)
+
+## Ressources
+
+* [Official Angular Universal Guide](https://angular.io/guide/universal)
+* [nestjs/ng-universal](https://github.com/nestjs/ng-universal)
 
 ## Development server
 
@@ -32,7 +39,7 @@ Run `ng test` to execute the unit tests via [Jest](https://jestjs.io/).
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng e2e` to execute the end-to-end tests via [@nrwl/cypress](https://www.npmjs.com/package/@nrwl/cypress).
 
 ## Further help
 

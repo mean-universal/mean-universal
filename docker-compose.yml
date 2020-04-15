@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  server:
+    container_name: "jpmean_server"
+    build: .
+    image: 'jpmean_server'
+    restart: always
+    ports:
+      - "${SERVER_PORT}:4200"
+    environment:
+      - NODE_ENV=${NODE_ENV}
+    links:
+      - db
+    depends_on:
+      - db
+  db:
+    container_name: "jpmean_db"
+    image: "mongo"
+    volumes:
+      - mongodata:/data/db
+    ports:
+      - "27017:27017"
+
+volumes:
+  mongodata:

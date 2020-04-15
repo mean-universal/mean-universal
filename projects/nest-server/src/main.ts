@@ -1,9 +1,16 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import * as helmet from 'helmet';
+import { ConfigService } from '@nestjs/config';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  const config: ConfigService = app.get(ConfigService);
+  if (+config.get('CORS_ENABLED') === 1) {
+    app.enableCors();
+  }
   app.setGlobalPrefix('api');
+  app.use(helmet());
   await app.listen(process.env.PORT || 4000);
 }
 
@@ -16,4 +23,3 @@ const moduleFilename = (mainModule && mainModule.filename) || '';
 if (moduleFilename === __filename || moduleFilename.includes('iisnode')) {
   bootstrap().catch(err => console.error(err));
 }
-

@@ -10,11 +10,16 @@
     "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
+    "resolveJsonModule": true,
     "target": "es2015",
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@server/*": ["projects/nest-server/src/*"],
+      "@client/*": ["projects/universal-app/src/*"]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

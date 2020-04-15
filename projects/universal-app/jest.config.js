@@ -4,6 +4,7 @@
  * https://github.com/thymikee/jest-preset-angular
  */
 module.exports = {
-  testMatch: ['**/+(*.)+(spec|test).+(ts|js)?(x)'],
-  moduleFileExtensions: ['ts', 'js', 'html']
+  testMatch: ['**/projects/universal-app/**/+(*.)+(spec|test).+(ts|js)?(x)'],
+  moduleFileExtensions: ['ts', 'js', 'html'],
+  coverageDirectory: './coverage'
 };

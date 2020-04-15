@@ -3,47 +3,43 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "jparts-mean": {
+    "universal-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "inlineStyle": true
         }
       },
-      "root": "",
-      "sourceRoot": "src",
+      "root": "projects/universal-app",
+      "sourceRoot": "projects/universal-app/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/jparts-mean/browser",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
+            "outputPath": "dist/jp-mean/browser",
+            "index": "projects/universal-app/src/index.html",
+            "main": "projects/universal-app/src/main.ts",
+            "polyfills": "projects/universal-app/src/polyfills.ts",
+            "tsConfig": "projects/universal-app/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/favicon.ico",
-              "src/assets",
-              "src/manifest.webmanifest"
+              "projects/universal-app/src/favicon.ico",
+              "projects/universal-app/src/assets",
+              "projects/universal-app/src/manifest.webmanifest"
             ],
             "styles": [
-              "src/scss/main.scss"
+              "projects/universal-app/src/scss/main.scss"
             ],
-            "stylePreprocessorOptions": {
-              "includePaths": [
-                "src/scss"
-              ]
-            },
             "scripts": []
           },
           "configurations": {
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "projects/universal-app/src/environments/environment.ts",
+                  "with": "projects/universal-app/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -67,31 +63,31 @@
                 }
               ],
               "serviceWorker": true,
-              "ngswConfigPath": "ngsw-config.json"
+              "ngswConfigPath": "projects/universal-app/ngsw-config.json"
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "jparts-mean:build"
+            "browserTarget": "universal-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "jparts-mean:build:production"
+              "browserTarget": "universal-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "jparts-mean:build"
+            "browserTarget": "universal-app:build"
           }
         },
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "polyfills": "src/polyfills.ts",
+            "polyfills": "projects/universal-app/src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "no-cache": true
           }
@@ -100,9 +96,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
+              "projects/universal-app/tsconfig.app.json",
+              "projects/universal-app/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -112,9 +107,9 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/jparts-mean/server",
-            "main": "server.ts",
-            "tsConfig": "tsconfig.server.json",
+            "outputPath": "dist/jp-mean/server",
+            "main": "projects/nest-server/server.ts",
+            "tsConfig": "projects/nest-server/tsconfig.server.json",
             "externalDependencies": [
               "@nestjs/microservices",
               "@nestjs/microservices/microservices-module",
@@ -128,8 +123,8 @@
               "outputHashing": "media",
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "projects/universal-app/src/environments/environment.ts",
+                  "with": "projects/universal-app/src/environments/environment.prod.ts"
                 }
               ],
               "sourceMap": false,
@@ -140,30 +135,29 @@
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
-            "browserTarget": "jparts-mean:build",
-            "serverTarget": "jparts-mean:server"
+            "browserTarget": "universal-app:build",
+            "serverTarget": "universal-app:server"
           },
           "configurations": {
             "production": {
-              "browserTarget": "jparts-mean:build:production",
-              "serverTarget": "jparts-mean:server:production"
+              "browserTarget": "universal-app:build:production",
+              "serverTarget": "universal-app:server:production"
             }
           }
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "jparts-mean:build:production",
-            "serverTarget": "jparts-mean:server:production",
-            "routes": [
-              "/"
-            ]
+            "browserTarget": "universal-app:build:production",
+            "serverTarget": "universal-app:server:production",
+            "routes": ["/"]
           },
           "configurations": {
             "production": {}
           }
         }
       }
-    }},
-  "defaultProject": "jparts-mean"
+    }
+  },
+  "defaultProject": "universal-app"
 }

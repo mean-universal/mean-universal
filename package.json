@@ -1,21 +1,30 @@
 {
-  "name": "jparts-mean",
-  "version": "0.0.0",
+  "name": "jp-mean-universal",
+  "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "test:server": "jest --config projects/nest-server/jest.config.js",
+    "test:server-w": "jest --config projects/nest-server/jest.config.js --watch",
+    "test:server-cov": "jest --config projects/nest-server/jest.config.js --coverage",
     "lint": "ng lint",
+    "lint:server": "tslint -c projects/nest-server/tslint.json -p projects/nest-server/tsconfig.server.json projects/nest-server/src/**/*.ts --force",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run jparts-mean:serve-ssr",
-    "serve:ssr": "node dist/jparts-mean/server/main.js",
-    "build:ssr": "ng build --prod && ng run jparts-mean:server:production",
-    "prerender": "ng run jparts-mean:prerender",
+    "dev:ssr": "ng run universal-app:serve-ssr",
+    "serve:ssr": "node dist/jp-mean/server/main.js",
+    "build:ssr": "ng build --prod && ng run universal-app:server:production",
+    "prerender": "ng run universal-app:prerender",
     "prebuild:ssr": "ngcc",
     "postinstall": "ngcc"
   },
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JohnnyDevNull/jp-mean-universal"
+  },
   "dependencies": {
     "@angular/animations": "~9.1.1",
     "@angular/common": "~9.1.1",

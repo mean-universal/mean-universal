@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/nest-server",
+    "module": "commonjs",
+    "types": ["node"],
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "files": [
+    "src/main.ts",
+    "../universal-app/src/main.server.ts",
+    "server.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ],
+  "angularCompilerOptions": {
+    "entryModule": "./src/app/app.server.module#AppServerModule"
+  }
+}

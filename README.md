@@ -14,6 +14,7 @@ This project was inspired by the following projects:
 
 * [Official Angular Universal Guide](https://angular.io/guide/universal)
 * [nestjs/ng-universal](https://github.com/nestjs/ng-universal)
+* [Official NestJS Docs](https://docs.nestjs.com/)
 
 ## Development server
 

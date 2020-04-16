@@ -1,4 +1,4 @@
-# jp-mean-universal
+# MEAN Universal
 
 Why just another MEAN stack project?
  

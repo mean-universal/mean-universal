@@ -6,7 +6,7 @@ The most well-known [meanjs.org](https://www.meanjs.org) is outdated with the ol
 
 ... so what do you get with this project?
 
-The Stack:
+#### The Stack
 
 * M: The database MongoDB
 * E: Stands for [ExpressJS](https://expressjs.com/de/), but here switched over to [NestJS](https://nestjs.com/)
@@ -15,10 +15,14 @@ The Stack:
 
 ... but wait, there is also a version with Express: [mean.io](https://github.com/linnovate/mean) - from Linnovate - if you want a more classical approach.
 
-Testing:
+#### Testing
+
+The following two testing frameworks are modern and fast enough to get nearly anything done for a high quality level:
 
 * End-To-End (e2e): [Cypress](https://www.cypress.io/)
 * Unit: [Jest](https://jestjs.io/)
+
+If you don't know the differences between the [Testing Levels](https://en.wikipedia.org/wiki/Software_testing#Testing_levels) or you don't have much knowledge in general about this topic you should consider this page: [Software Testing](https://en.wikipedia.org/wiki/Software_testing)
 
 ## Why using NestJS?
 

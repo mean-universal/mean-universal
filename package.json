@@ -24,9 +24,7 @@
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
     "docker:db:up": "docker-compose up -d db",
-    "docker:db:down": "docker-compose down db",
-    "docker:server:up": "docker-compose up -d server",
-    "docker:server:down": "docker-compose up -d server"
+    "docker:server:up": "docker-compose up -d server"
   },
   "private": true,
   "repository": {

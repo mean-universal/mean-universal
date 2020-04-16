@@ -7,7 +7,7 @@ services:
     image: 'jpmean_server'
     restart: always
     ports:
-      - "${SERVER_PORT}:4200"
+      - "${SERVER_PORT}:4000"
     environment:
       - NODE_ENV=${NODE_ENV}
     links:

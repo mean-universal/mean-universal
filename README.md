@@ -37,19 +37,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 The NestJS server was generated with the `ng add @nest/ng-universal` command and manually optimized, so that the server code is centralized under `projects/nest-server`.
 This is not a standalone Angular project like you would normally see in the angular.json file, instead it is tightly coubled with the `projects/universal-app` and acts also as REST-API.
 
-## Ressources
-
-* [Official Angular Universal Guide](https://angular.io/guide/universal)
-* [nestjs/ng-universal](https://github.com/nestjs/ng-universal)
-* [Official NestJS Docs](https://docs.nestjs.com/)
-
-This project was inspired by the following projects:
-
-* [linnovate/mean](https://github.com/linnovate/mean)
-* [TrilonIO/universal-nest](https://github.com/TrilonIO/universal-nest)
-* [Angular-RU/angular-nest-starter](https://github.com/Angular-RU/angular-nest-starter)
-* [nartc/nest-mean](https://github.com/nartc/nest-mean)
-
 ## Prerequisites
 
 The project provides a [docker-compose.yml](docker-compose.yml) for development. So it's recommended that you know some Docker basics if you want to use it, but you can also setup your own database and node server.
@@ -92,3 +79,18 @@ Run `ng e2e` to execute the end-to-end tests via [@nrwl/cypress](https://www.npm
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).  
 To get more help on the Nest CLI use `nest --help` or go check out the [Nest CLI README](https://github.com/nestjs/nest-cli/blob/master/README.md).
+
+## Ressources
+
+* [Official Angular Universal Guide](https://angular.io/guide/universal)
+* [nestjs/ng-universal](https://github.com/nestjs/ng-universal)
+* [Official NestJS Docs](https://docs.nestjs.com/)
+
+## Credits
+
+This project was inspired by the following projects:
+
+* [linnovate/mean](https://github.com/linnovate/mean)
+* [TrilonIO/universal-nest](https://github.com/TrilonIO/universal-nest)
+* [Angular-RU/angular-nest-starter](https://github.com/Angular-RU/angular-nest-starter)
+* [nartc/nest-mean](https://github.com/nartc/nest-mean)

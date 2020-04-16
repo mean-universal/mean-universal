@@ -43,7 +43,8 @@ This project was inspired by the following projects:
 
 The project provides a [docker-compose.yml](docker-compose.yml) for development. So it's recommended that you know some Docker basics if you want to use it, but you can also setup your own database and node server.
 
-If you want to learn more about docker take a look at the official [docs.docker.com](https://docs.docker.com/).
+If you want to learn more about docker take a look at the official [docs.docker.com](https://docs.docker.com/).  
+If you decide to use docker you do not need to set up a MongoDB for development by yourself. Just run: `npm run docker:db:up`.
 
 ## Development server
 

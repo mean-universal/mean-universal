@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'jparts-mean'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('jparts-mean');
+    expect(app.title).toEqual('jpmean-universal');
   });
 
   it('should render title', () => {

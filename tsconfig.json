@@ -18,7 +18,8 @@
     ],
     "paths": {
       "@server/*": ["projects/nest-server/src/*"],
-      "@client/*": ["projects/universal-app/src/*"]
+      "@client/*": ["projects/universal-app/src/*"],
+      "@client-e2e/*": ["projects/universal-app-e2e/src/*"]
     }
   },
   "angularCompilerOptions": {

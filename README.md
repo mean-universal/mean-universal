@@ -6,12 +6,19 @@ The most well-known [meanjs.org](https://www.meanjs.org) is outdated with the ol
 
 ... so what do you get with this project?
 
+The Stack:
+
 * M: The database MongoDB
 * E: Stands for [ExpressJS](https://expressjs.com/de/), but here switched over to [NestJS](https://nestjs.com/)
 * A: [Angular](https://angular.io/) 9+ combined with the [Universal](https://angular.io/guide/universal) part for SSR (Server-Side-Rendering)
 * N: [NodeJS](https://nodejs.org/en/), which indicates only the runtime platform
 
 ... but wait, there is also a version with Express: [mean.io](https://github.com/linnovate/mean) - from Linnovate - if you want a more classical approach.
+
+Testing:
+
+* End-To-End (e2e): [Cypress](https://www.cypress.io/)
+* Unit: [Jest](https://jestjs.io/)
 
 ## Why using NestJS?
 

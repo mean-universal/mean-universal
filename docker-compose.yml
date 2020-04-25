@@ -2,9 +2,9 @@ version: "3.7"
 
 services:
   server:
-    container_name: "jpmean_server"
+    container_name: "mean-universal-server"
     build: .
-    image: 'jpmean_server'
+    image: 'mean-universal-server'
     restart: always
     ports:
       - "${SERVER_PORT}:4000"
@@ -15,7 +15,7 @@ services:
     depends_on:
       - db
   db:
-    container_name: "jpmean_db"
+    container_name: "mean-universal-db"
     image: "mongo"
     volumes:
       - mongodata:/data/db

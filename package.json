@@ -1,5 +1,5 @@
 {
-  "name": "jp-mean-universal",
+  "name": "mean-universal",
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
@@ -20,7 +20,7 @@
     "prerender": "ng run universal-app:prerender",
     "prebuild:ssr": "ngcc",
     "postinstall": "ngcc",
-    "docker:build": "docker build -t jpmean_server .",
+    "docker:build": "docker build -t mean-universal-server .",
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
     "docker:db:up": "docker-compose up -d db",

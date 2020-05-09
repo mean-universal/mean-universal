@@ -61,8 +61,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-* Run `npm run build` to build the universal-app only. The build artifacts will be stored in the `dist/jp-mean/browser` directory. Use the `--prod` flag for a production build.  
-* Run `npm run build:ssr` to build the universal-app with the nest-server together. The build artifacts for the server part will be stored in the `dist/jp-mean/server` directory.
+* Run `npm run build` to build the universal-app only. The build artifacts will be stored in the `dist/mean/browser` directory. Use the `--prod` flag for a production build.  
+* Run `npm run build:ssr` to build the universal-app with the nest-server together. The build artifacts for the server part will be stored in the `dist/mean/server` directory.
 
 ## Running unit tests
 

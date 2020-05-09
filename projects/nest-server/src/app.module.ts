@@ -20,7 +20,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
     }),
     AngularUniversalModule.forRoot({
       bootstrap: AppServerModule,
-      viewsPath: join(process.cwd(), 'dist/jp-mean/browser')
+      viewsPath: join(process.cwd(), 'dist/mean/browser')
     })
   ]
 })

@@ -8,6 +8,6 @@ describe('universal-app', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('jp-mean app is running!');
+    getGreeting().contains('mean-universal app is running!');
   });
 });

@@ -18,7 +18,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/universal-app/browser",
+            "outputPath": "dist/mean/browser",
             "index": "projects/universal-app/src/index.html",
             "main": "projects/universal-app/src/main.ts",
             "polyfills": "projects/universal-app/src/polyfills.ts",
@@ -107,7 +107,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/universal-app/server",
+            "outputPath": "dist/mean/server",
             "main": "projects/nest-server/server.ts",
             "tsConfig": "projects/nest-server/tsconfig.server.json",
             "externalDependencies": [
